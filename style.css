@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(103, 113, 139);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.avatar-picker {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid white;
+  z-index: 3;
+  box-shadow: 0px 0px 0px 116px rgba(0, 0, 0, 0.5);
+}
+
+.avatar-hide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.avatar__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
