@@ -10,42 +10,25 @@ body {
   margin: 0;
 }
 
-.avatar-picker {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+canvas {
+    display: block;
+    margin-bottom: 20px;
 }
 
-.avatar {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  position: relative;
-  border: 2px solid white;
-  z-index: 3;
-  box-shadow: 0px 0px 0px 116px rgba(0, 0, 0, 0.5);
+input[type="file"] {
+    margin-bottom: 10px;
 }
 
-.avatar-hide {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  z-index: 2;
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.avatar__image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+button:hover {
+    background-color: #0069d9;
 }
