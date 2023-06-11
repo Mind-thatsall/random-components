@@ -74,16 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
     ctx.drawImage(image, imageX, imageY, image.width, image.height);
 
     // Darken area outside circle
-    ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
     if (isImageLoaded) {
       drawPlaceholder();
     }
-  }
-
-  function fillDarkRect(width, height) {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
-    ctx.fillRect(0, 0, width, height);
   }
 
   // Draw Placeholder
